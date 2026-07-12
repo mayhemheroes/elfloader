@@ -1,0 +1,13 @@
+[package]
+name = "elfloader-kat"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[[bin]]
+name = "elfloader-kat"
+path = "src/main.rs"
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]

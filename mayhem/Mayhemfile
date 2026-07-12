@@ -1,0 +1,9 @@
+project: elfloader
+
+# Target name (unique within the project)
+target: elfloader
+
+cmds:
+    # libFuzzer binary; Mayhem feeds inputs on stdin (no @@ = stdin input).
+    - cmd: /mayhem/elfloader
+      libfuzzer: true
